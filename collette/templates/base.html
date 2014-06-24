@@ -1,0 +1,32 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Collette | Colour Pallette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="flat ui, colour, color, pallette">
+  <meta name="description" content="Collette - colour pallette">
+
+  
+  <link rel="shortcut icon" href="{% static "img/favicon.png" %}" type="image/x-icon">
+  <link href="{% static "css/collette.css" %}" rel="stylesheet">
+
+
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-45807549-1', 'lilianakastilio.co.uk');ga('send', 'pageview');
+  </script>
+</head>
+<body>
+
+<div id="container">
+  <h1>{collette}</h1>
+  <h2>{colour} + {pallette} = a place for all my favourite colours</h2>
+  {% block content %}
+  {% endblock %}
+</div>
+
+<script style="text/javascript" src="{% static "js/collette.js" %}"></script>
+
+</body>
+</html>

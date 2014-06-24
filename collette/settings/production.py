@@ -1,0 +1,1 @@
+from collette.settings import *

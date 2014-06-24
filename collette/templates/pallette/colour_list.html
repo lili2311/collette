@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div id="form-container">
+    <form id="add-color-form" method="POST">
+     {{ form.as_p }}
+     {% csrf_token %}
+  	 <button id="submit-color" type="submit">Save</button>   
+  	</form>     
+  </div>
+  <ul id="color-list">
+    {% for colour in colours %}
+      <li>
+        <div class="color-circle" style="background-color:#{{ colour.hex }}">
+          <span class="color-text" style="color:white">#{{ colour.hex }}</span>
+        </div>
+      <li>
+    {% endfor %}
+  </ul>
+{% endblock %}
