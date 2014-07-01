@@ -65,7 +65,7 @@ input:focus {
   border-color:#ff3d7c;
   
 }
-button, #submit-color {  
+button {  
   border:0.1em solid #563d7c;
   width:4em;
   border-radius:0.4em;
@@ -83,20 +83,28 @@ button, #submit-color {
   background-color:#fcfcfc;
   text-decoration:none;
 }
-#submit-color:hover {
+button:hover {
   color:#fff;
   background-color:#563d7c;
 }
+label {
+  display:none;
+}
 
-#form-container {
+form {
   margin:0 auto;
   height:2em;
-  padding:5em 0;
+  padding:3em 0;
   width:13em;
-}
-form {
   display:inline-block;
 }
+
+#form-container {
+    max-width:50em;
+
+}
+
+
 #container {
   margin:0 auto;
   padding:0;

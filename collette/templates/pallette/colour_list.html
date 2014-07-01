@@ -2,7 +2,7 @@
 {% block content %}
   <div id="form-container">
     <form id="add-color-form" method="POST">
-     {{ form.as_p }}
+     {{ form }}
      {% csrf_token %}
   	 <button id="submit-color" type="submit">Save</button>   
   	</form>     
