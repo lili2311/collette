@@ -52,13 +52,13 @@ input {
   width:6em;
   background-color:#fdf7f7;
   border: 0.1em solid #563d7c;
-  margin:0;
-  line-height:1.3em;
+  margin:0 auto;
   font-size:1em;
-  height:2em;
   display:inline-block;
   vertical-align:bottom;
   color:#d9534f;
+  padding:.5em;
+
 }
 
 input:focus {
@@ -69,11 +69,11 @@ button {
   border:0.1em solid #563d7c;
   width:4em;
   border-radius:0.4em;
-  margin-left:0.5em;
   padding:.5em;
   font-size:1em;
   vertical-align:bottom;
   text-align:center;
+  margin:0 0 0 .5em;
   cursor: pointer;
   display:inline-block;
   font-family:"Tahoma";
@@ -93,15 +93,14 @@ label {
 
 form {
   margin:0 auto;
-  height:2em;
   padding:3em 0;
-  width:13em;
   display:inline-block;
 }
 
 #form-container {
-    max-width:50em;
-
+  margin:0 auto;
+  max-width:14em;
+  min-width:11em;
 }
 
 

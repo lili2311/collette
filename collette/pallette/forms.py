@@ -5,4 +5,4 @@ class ColourForm(forms.ModelForm):
 
 	class Meta:
 		model = Colour
-		fields = ('hex',) 
+		fields = ('hex',) 		 
