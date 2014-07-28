@@ -4,4 +4,4 @@ from collette.settings import *
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['agile-sierra-7809.herokuapp.com']
