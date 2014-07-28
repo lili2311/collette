@@ -24,7 +24,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['http://agile-sierra-7809.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
