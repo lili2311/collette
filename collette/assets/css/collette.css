@@ -110,3 +110,14 @@ form {
   max-width:50em;
 }
 
+footer {
+  text-align: center;
+  padding:2em;
+
+}
+
+footer a {
+    color:#d9534f;
+
+}
+
