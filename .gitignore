@@ -1,3 +1,5 @@
+collette/settings/local.pyc
+collette/settings/local.py
 venv
 *.pyc
 staticfiles
