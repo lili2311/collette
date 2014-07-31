@@ -88,11 +88,11 @@ USE_TZ = True  # Stores dates with timezone
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'collette/assets/'),
-    
+
 )
 
 TEMPLATE_DIRS = (
