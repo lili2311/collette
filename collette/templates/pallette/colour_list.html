@@ -10,8 +10,9 @@
   <ul id="color-list">
     {% for colour in colours %}
       <li>
-        <div class="color-circle" style="background-color:#{{ colour.hex }}">
-          <span class="color-text" style="color:black">#{{ colour.hex }}</span>
+        <div class="color-container">
+          <div class="color-circle" style="background-color:#{{ colour.hex }}"></div>
+          <span class="color-text">#{{ colour.hex }}</span>
         </div>
       <li>
     {% endfor %}
