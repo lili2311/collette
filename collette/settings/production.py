@@ -16,8 +16,7 @@ if not DEBUG:
     AWS_STORAGE_BUCKET_NAME = 'www.collette.co.uk'
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-    STATIC_URL = 'http://%s.s3-website-eu-west-1.amazonaws.coms/' % AWS_STORAGE_BUCKET_NAME
-
+    STATIC_URL = 'http://%s.amazonaws.coms/' % AWS_STORAGE_BUCKET_NAME
 
 
 LOGGING = {
