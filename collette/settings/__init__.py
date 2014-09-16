@@ -15,11 +15,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-AWS_STORAGE_BUCKET_NAME = os.environ['www.collette.co.uk']
+
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'wf=4(wy@(*s@b4txd*z(9h66#$q5!_fd2y0zw8t4n+rol2=bmo'
-
+SECRET_KEY = 'AQQ/fdckyrtm8NGT2u7upUEGDmrV07yC7kam2SA'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
