@@ -2,7 +2,7 @@ body {
   margin:0 auto;
   padding:0;
   line-height:1.3em;
-  font-family:"open Sans";
+  font-family:"Open Sans", "Ariel";
   font-weight:100;
   background:#e3dedb;
 }
@@ -10,10 +10,22 @@ ul {
   list-style:none;
   margin:0 auto;
   display:block;
+  padding: 3em 0;
 }
 ul li {
   margin: 0 0 0 1em;
   display:inline-block;  
+}
+.errorlist {
+  margin:0;
+  padding:0;
+}
+.errolist li {
+  margin:0;
+  padding:0;
+  font-family:"Open Sans", "Ariel";
+  font-weight:100;
+  font-style:italic;
 }
 .color-circle {
   width:10em;
@@ -40,6 +52,7 @@ h2 {
   font-weight:400;  
   padding: 1em 0;
   line-height:1.3em;
+  margin:0;
 }
 h1 {
   text-align:center;
@@ -62,6 +75,7 @@ h1 {
   text-transform:uppercase;
   margin: 0 0 1em 0;
   color:#181818;
+  font-family:"Open Sans", "Ariel";
 }
 
 input[type=text] {
@@ -76,6 +90,8 @@ input[type=text] {
   vertical-align:bottom;
   color:#111;
   box-shadow:4px 4px 0px rgba(0,0,0,.1);
+  font-family:"Open Sans", "Ariel";
+  font-weight:100;
 
 }
 label {
@@ -85,6 +101,16 @@ footer {
   text-align: center;
   margin:0 auto;
   padding: 3em 0;
+  background-color: #444;
+  color:#fff;
+  font-family:"Open Sans", "Ariel";
+  font-weight:100;
+}
+
+footer a {
+  color:#e3dedb;
+  font-family:"Open Sans", "Ariel";
+  font-weight:100;
 }
 
 button, #submit-color {  
@@ -113,8 +139,8 @@ button, #submit-color {
 #form-container {
   margin:0 auto;
   height:2em;
-  padding:5em 0;
-  width:13em;
+  padding:3em 0;
+  width:12em;
 }
 form {
   display:inline-block;
