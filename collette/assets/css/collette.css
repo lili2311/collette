@@ -78,6 +78,15 @@ input[type=text] {
   box-shadow:4px 4px 0px rgba(0,0,0,.1);
 
 }
+label {
+  display:none;
+}
+footer {
+  text-align: center;
+  margin:0 auto;
+  padding: 3em 0;
+}
+
 button, #submit-color {  
   border:0;
   width:4em;
@@ -98,7 +107,7 @@ button, #submit-color {
 }
 #submit-color:hover {
   background:#d43f3a;  
-  
+
 }
 
 #form-container {

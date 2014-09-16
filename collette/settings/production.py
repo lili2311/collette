@@ -12,11 +12,12 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['agile-sierra-7809.herokuapp.com']
 
 if not DEBUG:
-    AWS_ACCESS_KEY_ID = os.environ.get('AKIAI7SHPOXK7TIJC4QQ')
+    AWS_ACCESS_KEY_ID = 'AKIAIH533NYC56Y3KVKQ'
     AWS_STORAGE_BUCKET_NAME = 'www.collette.co.uk'
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATIC_URL = 'http://%s.s3-website-eu-west-1.amazonaws.coms/' % AWS_STORAGE_BUCKET_NAME
+
 
 
 LOGGING = {
