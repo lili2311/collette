@@ -17,7 +17,7 @@ if not DEBUG:
     AWS_SECRET_ACCESS_KEY = 'Ecg3KRCnr5yuMY2UkwlM9IRgLZk2zMNfmchJnPOB'
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
     STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-    STATIC_URL = "https://s3-eu-west-1.amazonaws.com/%s" % AWS_STORAGE_BUCKET_NAME
+    STATIC_URL = "https://s3-eu-west-1.amazonaws.com/" + AWS_STORAGE_BUCKET_NAME
 
 
 LOGGING = {
