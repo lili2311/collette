@@ -12,7 +12,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['agile-sierra-7809.herokuapp.com']
 
 AWS_ACCESS_KEY_ID = 'AKIAIH533NYC56Y3KVKQ'
-AWS_SECRET_KEY = os.environ['S3_SECRET'])
+AWS_SECRET_KEY = os.environ['S3_SECRET']
 AWS_STORAGE_BUCKET_NAME = 'collette-prod'
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
