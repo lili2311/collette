@@ -16,4 +16,5 @@ def colour_list(request):
 	colours = Colour.objects.all()
 	context = {'colours': colours, 'form': form}
 
+
 	return render(request, 'pallette/colour_list.html', context)
