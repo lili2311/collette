@@ -14,6 +14,15 @@ ul {
   display:block;
   padding: 3em 0;
 }
+nav a {
+  text-decoration: none;
+  color:#3c3c3c;
+  font-weight: bold;
+
+}
+nav {
+  background-color: #A0C2AC;
+}
 ul li {
   margin: 0 0 0 1em;
   display:inline-block;  
@@ -22,7 +31,7 @@ ul li {
   margin:0;
   padding:0;
 }
-.errolist li {
+.errorlist li {
   margin:0;
   padding:0;
   font-family:"Open Sans", "Ariel";
@@ -80,8 +89,8 @@ h1 {
   font-family:"Open Sans", "Ariel";
 }
 
-input[type=text] {
-  width:6em;
+input[type=text], input[type=password], input[type=email] {
+  width:10em;
   background-color:#fff;
   border: 0;
   margin:0;
@@ -96,9 +105,12 @@ input[type=text] {
   font-weight:100;
 
 }
-label {
-  display:none;
+
+#add-color-form input[type=text] {
+  width: 8em;
+  margin-right: .5em;
 }
+
 footer {
   text-align: center;
   margin:0 auto;
@@ -122,12 +134,52 @@ footer a {
 footer a:hover {
   color:#ABCABC;
 }
+#add-color-form label {
+  display: none;
+  margin-right:0.5em;
 
-button, #submit-color {  
+}
+#add-color-form {
+  width: 16em;
+}
+#registration-form {
+  width: 30em;
+}
+.errorlist {
+  font-size: .8em;
+  background: #d9534f;
+  width: 10em;
+  padding: .5em;
+  color: white;
+}
+.helptext {
+  display: block;
+  font-size: .8em;
+  padding: .5em 0;
+  color: grey;
+  font-style: italic;
+}
+#registration-form label {
+  width: 12em;
+}
+
+#registration-form input {
+  width: 12em;
+}
+label {
+  width: 6em;
+  text-align: right;
+  display: inline-flex;
+  padding: .5em 0;
+}
+form {
+  margin: 0 auto;
+}
+
+button, #submit-color, input[type=submit] {  
   border:0;
-  width:4em;
+  width:8em;
   box-shadow:4px 4px 0px rgba(0,0,0,.1);
-  margin-left:0.5em;
   padding:0.1em 0.5em;
   line-height:1.3em;
   height:3em;
@@ -141,6 +193,7 @@ button, #submit-color {
   background-color:#d9534f;
   text-decoration:none;
 }
+
 #submit-color:hover {
   background:#d43f3a;  
 
@@ -148,13 +201,10 @@ button, #submit-color {
 
 #form-container {
   margin:0 auto;
-  height:2em;
   padding:3em 0;
-  width:12em;
+  width:20em;
 }
-form {
-  display:inline-block;
-}
+
 #container {
   margin:0 auto;
   padding:0;

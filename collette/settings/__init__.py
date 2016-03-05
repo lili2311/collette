@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'boto',
     'rest_framework',
     'collette.pallette',
+    'registration',
 
 )
 
@@ -136,6 +137,10 @@ REST_FRAMEWORK = {
     ),
 }
 
+# Django user registration settings.
+ACCOUNT_ACTIVATION_DAYS = 30
+REGISTRATION_DEFAULT_FROM_EMAIL = 'hello@collette.com'
+REGISTRATION_AUTO_LOGIN = True
 
 
 

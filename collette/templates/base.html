@@ -19,17 +19,35 @@
 
     ga('create', 'UA-53421925-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </head>
-<body>
-<style>#forkongithub a{background:#d9534f;color:#fcfcfc;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#EF4E4E;color:#fcfcfc;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#d9534f;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:0;}}</style><span id="forkongithub"><a href="https://github.com/lili2311/collette">Fork me on GitHub</a></span>
-<div id="container">
-  <h1>{collette}</h1>
-  <h2>{colour} + {pallette} = a place for all my favourite colours</h2>
-  {% block content %}
-  {% endblock %}
-</div>
-<footer><p>2014 &#169; Made with <span class="heart"> &#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a></p></footer>
-</body>
+  <body>
+    <style>#forkongithub a{background:#d9534f;color:#fcfcfc;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#EF4E4E;color:#fcfcfc;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#d9534f;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:0;}}</style><span id="forkongithub"><a href="https://github.com/lili2311/collette">Fork me on GitHub</a></span>
+    <nav>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li>
+          <a href="/palette/all">My Palettes</a>
+        </li>
+        <li>
+          <a href="/palette/add">&#43; Create a new Palette</a>
+        </li>
+        {% else %}
+        <li>
+          <a href="/accounts/login/?next=/">Login/Register</a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
+    <div id="container">
+      <h1>{collette}</h1>
+      {% block content %}
+      {% endblock %}
+    </div>
+    <footer><p>2014 &#169; Made with <span class="heart"> &#9829;</span> by <a href="http://www.lilianakastilio.co.uk">Liliana Kastilio</a></p>
+    </footer>
+  </body>
 </html>

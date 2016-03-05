@@ -11,6 +11,7 @@ class Pallette(models.Model):
 
 
 class Colour(models.Model):
+	pallete = models.ForeignKey('pallette.Pallette')
 	hex = models.CharField(max_length=6, unique=True,
 		validators=[
 	        RegexValidator(

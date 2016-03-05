@@ -18,6 +18,9 @@ DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 STATIC_URL = "https://s3-eu-west-1.amazonaws.com/" + AWS_STORAGE_BUCKET_NAME + "/"
 
+EMAIL_BACKEND = 'sgbackend.SendGridBackend'
+SENDGRID_USER = os.environ["SENDGRID_USERNAME"]
+SENDGRID_PASSWORD = os.environ["SENDGRID_PASSWORD"]
 
 LOGGING = {
     'version': 1,

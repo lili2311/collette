@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<ul id="color-list">
+  {% for colour in colours %}
+    <li>
+      <div class="color-container">
+        <div class="color-circle" style="background-color:#{{ colour.hex }}"></div>
+        <span class="color-text">#{{ colour.hex }}</span>
+      </div>
+    <li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
