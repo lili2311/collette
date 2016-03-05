@@ -23,8 +23,6 @@ SECRET_KEY = 'wxty)ggh*()###l9as-x5-4cv#ui&*ykm(@&bhek(p0ne_m6o9'
 DEBUG = False
 
 
-TEMPLATE_DEBUG = False
-
 ALLOWED_HOSTS = ['*']
 
 
@@ -98,9 +96,33 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'collette/assets/'),
 )
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, 'collette/templates/'),
-)
+
+CONTEXT_PROCESSORS = [
+    "django.contrib.auth.context_processors.auth",
+    "django.template.context_processors.debug",
+    "django.template.context_processors.i18n",
+    "django.template.context_processors.media",
+    "django.template.context_processors.static",
+    "django.template.context_processors.tz",
+    "django.contrib.messages.context_processors.messages"
+]
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': (
+            os.path.join(BASE_DIR, 'collette/templates/'),
+        ),
+        'OPTIONS': {
+            'loaders': (
+                'django.template.loaders.filesystem.Loader',
+                'django.template.loaders.app_directories.Loader'
+            ),
+            'context_processors': CONTEXT_PROCESSORS
+        }
+    }
+]
+
 
 # Django-REST-Framework settings.
 # Powers our API.

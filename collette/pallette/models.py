@@ -1,7 +1,15 @@
 from django.db import models
 from django.core.validators import RegexValidator, MinLengthValidator, MaxLengthValidator
 
-# Create your models here.
+
+class Pallette(models.Model):
+	user = models.ForeignKey('auth.User')
+	name = models.CharField(max_length=100)
+	
+	def __unicode__ (self):
+		return self.name
+
+
 class Colour(models.Model):
 	hex = models.CharField(max_length=6, unique=True,
 		validators=[

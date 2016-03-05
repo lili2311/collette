@@ -3,4 +3,4 @@ collette/settings/local.py
 venv
 *.pyc
 staticfiles
-
+.DS_Store
