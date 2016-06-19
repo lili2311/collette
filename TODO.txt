@@ -1,0 +1,8 @@
+Can add a new pallette since latest commit, next:
+Read about django urls, to allow users to view their own pallettes under username or username/:pallette-name
+View to see a new pallette
+Add colours to that pallette
+View all user created pallettes under Browse All
+Delete a colour
+Delete pallete
+
