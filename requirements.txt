@@ -1,4 +1,4 @@
-Django==1.9.4
+Django==1.11.29
 boto==2.31.1
 dj-database-url==0.3.0
 dj-static==0.0.6
